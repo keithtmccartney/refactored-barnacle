@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { WeatherService } from '../../services/weather/weather.service';
+import { WeatherService } from '../weather.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -21,7 +21,6 @@ export class DetailsComponent implements OnInit, OnDestroy {
   day1Name: string;
   day1State: string;
   day1Temp: number;
-
 
   day2Name: string;
   day2State: string;
